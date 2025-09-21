@@ -151,6 +151,9 @@ uvicorn app.api:app --reload
 **A API** estará disponível em http://127.0.0.1:8000.
 ​Acesse o frontend em http://127.0.0.1:8000/frontend/index.html (ou abra diretamente o arquivo index.html no seu navegador) para testar a aplicação.
 
+---
+
+
 **​Contribuições**
 ​Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades.
 
