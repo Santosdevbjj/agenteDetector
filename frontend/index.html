@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente de Análise STRIDE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Análise de Ameaças em Arquiteturas</h1>
+        <p>Utilize a inteligência artificial para detectar vulnerabilidades usando a metodologia STRIDE.</p>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>1. Faça o upload do seu diagrama de arquitetura</h2>
+            <form id="upload-form">
+                <input type="file" id="diagram-image-input" accept="image/*" required>
+                <button type="submit" id="analyze-button">Analisar</button>
+            </form>
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Analisando diagrama... Isso pode levar alguns segundos.</p>
+            </div>
+        </section>
+
+        <section id="results-section" class="hidden">
+            <h2>2. Relatório de Análise STRIDE</h2>
+            <div id="diagram-preview-container">
+                <h3>Diagrama Enviado:</h3>
+                <img id="diagram-preview" src="#" alt="Diagrama de Arquitetura" class="hidden">
+            </div>
+            
+            <div id="analysis-report-container">
+                <h3>Relatório Detalhado:</h3>
+                <pre id="analysis-report"></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Projeto Agente Detector. Desenvolvido por Santosdevbjj</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
