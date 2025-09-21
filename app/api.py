@@ -1,6 +1,4 @@
-#### 5. `app/api.py`
-
-O arquivo que define o endpoint da API.
+#### 5. `agenteDetector/app/api.py`
 
 ```python
 from fastapi import FastAPI, UploadFile, File, HTTPException
@@ -46,4 +44,4 @@ async def analyze_architecture(file: UploadFile = File(...)):
         return JSONResponse(content=analysis_report)
     
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e)) 
+        raise HTTPException(status_code=500, detail=str(e))
