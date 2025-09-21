@@ -142,13 +142,13 @@ input[type="file"]::file-selector-button {
     max-height: 500px;
     overflow-y: auto;
     font-size: 1rem;
+    margin-top: 1rem;
 }
 
-footer {
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
+#cytoscape-container {
     margin-top: 2rem;
-    color: #777;
-    border-top: 1px solid #eee;
+}
+
+#cy {
+    background-color: #f0f0f0;
 }
