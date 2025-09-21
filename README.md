@@ -154,7 +154,8 @@ uvicorn app.api:app --reload
 ---
 
 
-**​Contribuições**
+**​Contribuições:** 
+
 ​Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades.
 
 ---
